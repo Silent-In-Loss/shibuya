@@ -1,11 +1,10 @@
+
 const burger = document.querySelector('.burger')
-const nav = document.querySelector('.nav')
+const menu = document.querySelector('.menu')
 
-burger.addEventListener('click', () => {
-    nav.classList.toggle('active')
-})
-
-
+burger.onclick = () => {
+    menu.classList.toggle('active')
+}
 
 const swiperAlbum1 = new Swiper('.album__swiper-1', {
     loop: true,
@@ -37,7 +36,6 @@ const swiperAlbum1 = new Swiper('.album__swiper-1', {
 });
 
 
-
 const swiperAlbum2 = new Swiper('.album__swiper-2', {
     loop: true,
     slidesPerView: 0.3,
@@ -46,7 +44,7 @@ const swiperAlbum2 = new Swiper('.album__swiper-2', {
     autoplay: {
         delay: 0,
         disableOnInteraction: false,
-        reverseDirection: true
+reverseDirection: true
     },
 
     breakpoints: {
